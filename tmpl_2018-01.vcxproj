@@ -111,7 +111,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
       <FloatingPointModel>Fast</FloatingPointModel>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat>None</DebugInformationFormat>
       <BrowseInformation>
       </BrowseInformation>
     </ClCompile>
@@ -119,7 +119,7 @@
       <IgnoreSpecificDefaultLibraries>LIBCMT;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <OptimizeReferences>true</OptimizeReferences>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
       <LinkTimeCodeGeneration>
       </LinkTimeCodeGeneration>
     </Link>
@@ -136,46 +136,17 @@
   </ItemDefinitionGroup>
   <!-- END Custom section -->
   <ItemGroup>
-    <ClCompile Include="AABB.cpp" />
-    <ClCompile Include="BVH.cpp" />
-    <ClCompile Include="BVHNode.cpp" />
-    <ClCompile Include="camera.cpp" />
-    <ClCompile Include="floor.cpp" />
     <ClCompile Include="game.cpp" />
-    <ClCompile Include="material.cpp" />
-    <ClCompile Include="pathTracer.cpp" />
-    <ClCompile Include="plane.cpp" />
-    <ClCompile Include="ray.cpp" />
-    <ClCompile Include="sphere.cpp" />
     <ClCompile Include="surface.cpp" />
     <ClCompile Include="template.cpp">
       <PrecompiledHeader>Create</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="triangle.cpp" />
-    <ClCompile Include="triangleMesh.cpp" />
-    <ClCompile Include="wall.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="AABB.h" />
-    <ClInclude Include="BVH.h" />
-    <ClInclude Include="BVHNode.h" />
-    <ClInclude Include="camera.h" />
-    <ClInclude Include="ctpl_stl.h" />
-    <ClInclude Include="floor.h" />
     <ClInclude Include="game.h" />
-    <ClInclude Include="material.h" />
-    <ClInclude Include="object.h" />
-    <ClInclude Include="pathTracer.h" />
-    <ClInclude Include="plane.h" />
     <ClInclude Include="precomp.h" />
-    <ClInclude Include="ray.h" />
-    <ClInclude Include="sphere.h" />
     <ClInclude Include="surface.h" />
     <ClInclude Include="template.h" />
-    <ClInclude Include="tiny_obj_loader.h" />
-    <ClInclude Include="triangle.h" />
-    <ClInclude Include="triangleMesh.h" />
-    <ClInclude Include="wall.h" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="_readme.txt" />

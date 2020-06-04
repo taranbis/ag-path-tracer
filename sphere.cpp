@@ -1,7 +1,6 @@
 //
 // Created by George Lorenzetti on 25/11/18.
 //
-
 #include "precomp.h"
 static float getrandom(unsigned int *seed0, unsigned int *seed1) {
 	*seed0 = 36969 * ((*seed0) & 65535) + ((*seed0) >> 16);  // hash the seeds using bitwise AND and bitshifts

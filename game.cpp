@@ -230,7 +230,7 @@ void Game::Init() {
 		areaLights[0] = new Floor(20.0f, 10.0f, 10.0f, -10.0f, -3.0f, mlight);
 		areaLights[1] = new Floor(20.0f, 5.0f, 5.0f, 10.0f, -3.0f, mlight);
 		areaLightCount = 2;
-		
+
 		//pathTracer.useFILTERING = false;
 	}
 	else if (SCENE == 4) {
@@ -357,11 +357,11 @@ void Game::Shutdown()
 	}
 }
 
-
+#define STR(x) #x
 // -----------------------------------------------------------
 // Main application tick function
 // -----------------------------------------------------------
-void Game::Tick(float deltaTime, float t2)
+void Game::Tick(float deltaTime, float t2, int& exitapp)
 {
 	// clear the graphics window
 	processInput(deltaTime);
@@ -370,6 +370,10 @@ void Game::Tick(float deltaTime, float t2)
 		screen->Clear(0);
 	}
 	totalSamples++;
+	std::cout << STR(totalSamples) << " = " << totalSamples << std::endl;
+	if (totalSamples > 30) {
+		exitapp = 1;
+	}
 
 	pathTracer.seed1 = rand();
 	pathTracer.seed2 = rand();

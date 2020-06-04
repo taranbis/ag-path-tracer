@@ -26,7 +26,7 @@
  * Other values show scene 1.
  */
 
-/* Start Features - Please note that for demo purposes some scenes have features set as active/inactive in game.cpp. "pathTracer.useIS = boolean" for example. */
+ /* Start Features - Please note that for demo purposes some scenes have features set as active/inactive in game.cpp. "pathTracer.useIS = boolean" for example. */
 #define MAXDEPTH 10
 #define RR true
 #define NEE true
@@ -55,7 +55,7 @@
 
 // Then import wglext: This library tries to include the Windows
 // header WIN32_LEAN_AND_MEAN, unless it was already imported.
-#include <GL/wglext.h>
+//#include <GL/wglext.h>
 
 // Extra definitions for redirectIO
 #include <fcntl.h>
@@ -64,6 +64,7 @@
 
 // External dependencies:
 #include <FreeImage.h>
+#define SDL_MAIN_HANDLED
 #include <SDL2/SDL.h>
 
 // C++ headers
@@ -73,6 +74,7 @@
 #include <iostream>
 #include <memory>
 #include <random>
+#include <chrono>
 #include <vector>
 #include "ctpl_stl.h"
 
@@ -112,13 +114,8 @@ using namespace std;
 #include "ray.h"
 #include "material.h"
 
-
-
 using namespace Tmpl8;
 
 extern int skyboxIndex;
 extern vector<FIBITMAP*> textures;
-
-
-//#include "game.h"
 // clang-format on

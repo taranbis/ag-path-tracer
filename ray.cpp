@@ -3,7 +3,6 @@
 //
 
 #include "precomp.h"
-
 Ray::Ray(vec3 o, vec3 d){
     this->origin = o;
     //normalise d first
