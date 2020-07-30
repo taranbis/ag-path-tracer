@@ -371,7 +371,7 @@ void Game::Tick(float deltaTime, float t2, int& exitapp)
 	}
 	totalSamples++;
 	std::cout << STR(totalSamples) << " = " << totalSamples << std::endl;
-	if (totalSamples > 30) {
+	if (totalSamples > 10) {
 		exitapp = 1;
 	}
 

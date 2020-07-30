@@ -6,7 +6,6 @@
 #define TMPL8_2018_01_FLOOR_H
 
 #include "precomp.h"
-#include "floor.h"
 
 class Floor: public Object {
 public:

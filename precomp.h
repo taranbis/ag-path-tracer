@@ -4,15 +4,15 @@
 // Prevent expansion clashes (when using std::min and std::max).
 #define NOMINMAX
 
-#define SCRWIDTH 512
-#define SCRHEIGHT 512
+#define SCRWIDTH 256
+#define SCRHEIGHT 256
 #define INVPI 1/PI
 #define DOUBLEPI 2*PI
 
-#define THREAD_NO 128
+#define THREAD_NO 4
 #define SHOWFPS false
 
-#define SCENE 10
+#define SCENE 4
 /*
  * SCENE list:
  * 1 - 2 diffuse spheres, reflective sphere, textured floor, 1 spherical area light, 1 rectangular area light. DOF, RR, NEE, IS, FILTERING.
